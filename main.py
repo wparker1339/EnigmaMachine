@@ -5,7 +5,7 @@ from enigma_ui.enigma_ui import EnigmaUI
 
 def main():
     root = tk.Tk()
-    app = EnigmaUI(root)
+    _ = EnigmaUI(root)
     root.mainloop()
 
 if __name__ == "__main__":
