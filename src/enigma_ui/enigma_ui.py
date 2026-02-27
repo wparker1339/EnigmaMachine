@@ -111,9 +111,8 @@ class EnigmaUI:
     # Rotor display
     # ---------------------------------------------------------------
     def update_rotor_display(self):
-        self.rotor_labels[0]["text"] = self.machine.rotor3.get_letter()
-        self.rotor_labels[1]["text"] = self.machine.rotor2.get_letter()
-        self.rotor_labels[2]["text"] = self.machine.rotor1.get_letter()
+        for idx, rotor in enumerate(self.machine.rotors):
+            self.rotor_labels[idx]['text'] = rotor.get_letter()
 
     # ---------------------------------------------------------------
     # Animation helpers
